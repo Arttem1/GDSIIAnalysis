@@ -1,0 +1,53 @@
+#ifndef GDS_RECORDTYPE_H
+#define GDS_RECORDTYPE_H
+
+enum GDS_RecordType : unsigned char
+{
+    HEADER	=	0x00,
+    BGNLIB	=	0x01,
+    LIBNAME	=	0x02,
+    UNITS	=	0x03,
+    ENDLIB	=	0x04,
+    BGNSTR	=	0x05,
+    STRNAME	=	0x06,
+    ENDSTR	=	0x07,
+    BONDARY	=	0x08,
+    PATH	=	0x09,
+    SREF	=	0x0A,
+    AREF	=	0x0B,
+    TEXT	=	0x0C,
+    LAYER	=	0x0D,
+    DATATYPE=	0x0E,
+    WIDTH	=	0x0F,
+    XY	    =	0x10,
+    ENDEL	=	0x11,
+    SNAME	=	0x12,
+    COLROW	=	0x13,
+    NODE	=	0x15,
+    TEXTTYPE	=	0x16,
+    PRESENTATION=	0x17,
+    STRING	    =	0x19,
+    STRANS	    =	0x1A,
+    MAG	        =	0x1B,
+    ANGLE	    =	0x1C,
+    REFLIBS	    =	0x1F,
+    FONTS	    =	0x20,
+    PATHTYPE	=	0x21,
+    GENERATIONS	=	0x22,
+    ATTRATABLE	=	0x23,
+    ELFLAGS	    =	0x26,
+    NODETYPE	=	0x2A,
+    PROPATTR	=	0x2B,
+    PROPVALUE	=	0x2C,
+    BOX	        =	0x2D,
+    BOXTYPE	    =	0x2E,
+    PLEX 	    =	0x2F,
+    TAPENUM	    =	0x32,
+    TAPECODE	=	0x33,
+    FORMAT	    =	0x36,
+    MASK	    =	0x37,
+    ENDMASKS	=	0x38,
+    UNKNOWN		=   0xFF
+};
+
+#endif // GDS_RECORDTYPE_H
